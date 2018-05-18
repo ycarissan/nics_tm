@@ -40,7 +40,7 @@ Puis on prepare turbomole :
 2. Pour calculer les NICS:
 ==========================
 
-ajouter dans le fichier control les lignes suivantes **AVANT** $end :
+ajouter dans le fichier control les lignes suivantes **AVANT** ``$end`` :
 
 ``$ricc2``
    ``maxred 200``
