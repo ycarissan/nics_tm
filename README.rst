@@ -1,13 +1,22 @@
+0. Prerequis
+
+Vérifier que python est bien installé dans /usr/bin/python, sinon modifier la premiere ligne
+de nics_prep.py de manière adéquate.
+
+Rendre le fichier exécutable:
+
+# chmod 755 nics_prep.py
+
 1. Generation des points où calculer les NICS
 
 Pour chaque groupe d'atomes on lance
 
-# python nics_prep.py -l "at1 at2 at3 at4 ..." -g fichier.xyz -i 0.5 -n 4
+# ./nics_prep.py -l "at1 at2 at3 at4 ..." -g fichier.xyz -i 0.5 -n 4
 
 Les valeurs par défaut sont -g opt.xyz -i 0.5 -n 4
 donc si le fichier xyz se nomme opt.xyz, la commande devient :
 
-# python nics_prep.py -l "at1 at2 at3 at4 ..."
+# ./nics_prep.py -l "at1 at2 at3 at4 ..."
 
 Voir script.sh pour un exemple.
 
